@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Our Products | Baked Bites-Products</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+}
+
+/* Style the header */
+header {
+  background-color: #7B68EE;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: ;#FFFAF0
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 350px; /* only for demonstration, should be removed */
+  background: #FFFAF0;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #FFFAF0;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #7B68EE;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+
+<header>
+  <h2>Our Products</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+<header>
+      <li><a href="index.html">Home Page</a></li>
+<header>
+      <li><a href="career.html">Our Career</a></li>
+<header>
+      <li><a href="contact.html"</a>Get our contact!</li>
+<header>
+    </ul>
+  </nav>
+  
+  <article>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family:Georgia, serif;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1> Tasty breads, cakes, pies and sweet rolls</h1>
+<hr>
+
+<h2>Retail bakery of oven baked food</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('sweets')"> Sweets</button>
+  <button class="btn" onclick="filterSelection('pastry')"> Pastry</button>
+  <button class="btn" onclick="filterSelection('custom')"> Custom</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="images/amonguscake.jpeg" alt="Among Us Cake" style="width:60%">
+      <h4>Among Us Cake</h4>
+      <p>Birthday cake with Among Us design</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="images/birthcake.jpeg" alt="Birthday Cake" style="width:60%">
+      <h4>Birthday Cake</h4>
+      <p>A classic design of birthday cake</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="images/chocolatepastrypuffrolls.jpeg" alt="Chocolate Pastry Puff Rolls" style="width:60%">
+      <h4>Chocolate Pastry Puff Rolls</h4>
+      <p>Baked Patry and rolled with chocolate filling</p>
+    </div>
+  </div>
+  
+  <div class="column sweets">
+    <div class="content">
+      <img src="images/chocoloteminicake.jpeg" alt="Chocolote Mini Cake" style="width:60%">
+      <h4>Chocolote Mini Cake</h4>
+      <p>Mini flavoured chocolate cake</p>
+    </div>
+  </div>
+  <div class="column sweets">
+    <div class="content">
+    <img src="images/coconutwallnutcake.jpeg" alt="Coconut Wallnut Cake" style="width:60%">
+      <h4>Coconut Wallnut Cake</h4>
+      <p>
+Coconut cake with wallnut toppings</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="images/creampuff.jpeg" alt="creampuff" style="width:60%">
+      <h4>creampuff</h4>
+      <p>Baked pastry filling up with flavoured cream(mango, chocolate,blueberries etc.)</p>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="images/creampychickenpuffpastry.jpeg" alt="Creampy Chickenpuff Pastry" style="width:60%">
+      <h4>Creampy Chickenpuff Pastry</h4>
+      <p>Patry baked with cooked tastry chicken filling</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="images/makeupcake.jpeg" alt="Makeup Cake" style="width:60%">
+      <h4>Makeup Cake</h4>
+      <p>Custom design cake wih make up theme</p>
+    </div>
+  </div>
+  <div class="column sweets">
+    <div class="content">
+    <img src="images/pandanchiffoncake.jpeg" alt="Pandan Chiffon Cake" style="width:60%">
+      <h4>Pandan Chiffon Cake</h4>
+      <p>Super fluffy texture cake with pandan flavoured</p>
+    </div>
+  </div>
+<div class="column people">
+    <div class="content">
+    <img src="images/kitkatcake.jpeg" alt="KitKat Cake" style="width:60%">
+      <h4>KitKat Cake</h4>
+      <p>Custome made cake wtih KitKat Flavour</p>
+    </div>
+<div class="column sweets">
+    <div class="content">
+    <img src="images/orangecake.jpeg" alt="Orange Cake" style="width:200%">
+      <h4>Orange Cake</h4>
+      <p>Fresh baked orange cake with sugar topping</p>
+    </div>
+
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+  </article>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer>
+  <p>©Copyright - Bakery Bites Sdn Bhd (Co. Reg. No.:199401004525). All rights reserved.   Terms & Conditions and Privacy Policy.   Developed by IT Parnership Solution</p>
+</footer>
+
+</body>
+</html>
